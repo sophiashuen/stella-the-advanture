@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var family = {
+			michael:{
+				name: 'Bebe',
+				age: 26,
+				food: 'meat'
+			},
+			vivian: {
+				name: 'vivian',
+				age: 30,
+				food: 'corn'
+			},
+			corinne: {
+				name: 'corinne',
+				age: 29,
+				food: 'sweet'
+			}
+
+		};
+
+		var monster = {
+			dragon:{
+				live: 15,
+				attact: 'fire',
+				special:'fly'
+			},
+			gozilla:{
+
+				live:20,
+				attact:'yell',
+				special:'lazer'
+			},
+			cat: {
+				live:9,
+				attact:'pawn',
+				special:'Miao'
+			}
+		};
+
+		var hungry = function(person){
+			console.log(person.name + " is fighting monster by their favourite food as " + person.food);
+		};
+
+		var callMonster = function(name, data){
+
+			console.log(name + ' is attacting Vancouver using ' + data.attact);
+		};
+
+		for (var evil in monster){
+
+			callMonster(evil,monster[evil]);
+		}
+
+
+
+		for(var member in family){
+
+			// console.log(family[member]);
+			hungry(family[member]);
+		}
+
+
+		// console.log(family.name);	
+		
+
+	</script>
+</body>
+</html>
+
+<!-- Every time you type something and you need to go fast to the text you can use this tricks -->
